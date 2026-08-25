@@ -1,0 +1,72 @@
+{
+  "total_gateway_rows": 83,
+  "unique_gateway_payments": 80,
+  "bank_rows": 90,
+  "matched_payments": 62,
+  "match_rate": 0.775,
+  "gateway_side_exceptions": 18,
+  "bank_side_orphan_exceptions": 3,
+  "throughput_records_per_second": 224.22,
+  "exception_breakdown": [
+    [
+      "EXCEPTION_AMOUNT_MISMATCH",
+      8
+    ],
+    [
+      "EXCEPTION_MISSING_SETTLEMENT",
+      4
+    ],
+    [
+      "EXCEPTION_DUPLICATE_BANK",
+      3
+    ],
+    [
+      "EXCEPTION_DUPLICATE_GATEWAY",
+      3
+    ],
+    [
+      "EXCEPTION_ORPHAN_BANK",
+      3
+    ]
+  ],
+  "classification_accuracy": 1.0,
+  "evaluated_records": 80,
+  "correct_records": 80,
+  "confusion_matrix": [
+    {
+      "ground_truth_status": "EXCEPTION_AMOUNT_MISMATCH",
+      "predicted_status": "EXCEPTION_AMOUNT_MISMATCH",
+      "count": 8
+    },
+    {
+      "ground_truth_status": "EXCEPTION_DUPLICATE_BANK",
+      "predicted_status": "EXCEPTION_DUPLICATE_BANK",
+      "count": 3
+    },
+    {
+      "ground_truth_status": "EXCEPTION_DUPLICATE_GATEWAY",
+      "predicted_status": "EXCEPTION_DUPLICATE_GATEWAY",
+      "count": 3
+    },
+    {
+      "ground_truth_status": "EXCEPTION_MISSING_SETTLEMENT",
+      "predicted_status": "EXCEPTION_MISSING_SETTLEMENT",
+      "count": 4
+    },
+    {
+      "ground_truth_status": "MATCHED_DELAYED",
+      "predicted_status": "MATCHED_DELAYED",
+      "count": 15
+    },
+    {
+      "ground_truth_status": "MATCHED_EXACT",
+      "predicted_status": "MATCHED_EXACT",
+      "count": 39
+    },
+    {
+      "ground_truth_status": "MATCHED_SPLIT",
+      "predicted_status": "MATCHED_SPLIT",
+      "count": 8
+    }
+  ]
+}
